@@ -60,6 +60,8 @@
 - (PFQuery *)queryForTable
 {
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
+    [query orderByDescending:@"Categories"];
+    
     
     
     return query;
@@ -90,7 +92,7 @@
     // Returns Touched Cell and its Relation
     NSLog(@"%@",self.touchedCell);
     
-    
+    [self performSegueWithIdentifier:@"deals" sender:self];
         
     
 }
@@ -106,6 +108,7 @@
     if ([segue.identifier isEqualToString:@"deals"]) {
         DealsListViewController *destinationDeals = segue.destinationViewController;
         destinationDeals.clickedCell = self.touchedCell;
+
     }
     
     

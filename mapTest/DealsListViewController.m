@@ -26,7 +26,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+   
+    
+
 }
+
+
+
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     
@@ -55,8 +63,13 @@
 
 - (PFQuery *)queryForTable
 {
+    
+    
+    
     //Creates a relation based on a clicked cell at CategoryViewController and what the Relation is pointing at on Parse
     PFRelation *dealsRelation = [self.clickedCell relationForKey:@"catRelation"];
+    
+    
     
     
     return [dealsRelation query];
@@ -71,6 +84,7 @@
         cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
+//    [object refresh];
     
     cell.textLabel.text = [object objectForKey:@"Name"];
     
@@ -83,6 +97,8 @@
     
     // Recognizes touched Deal
     self.clickedDeal = [self objectAtIndexPath:indexPath];
+    
+    [self performSegueWithIdentifier:@"detail" sender:self];
     
     
 }

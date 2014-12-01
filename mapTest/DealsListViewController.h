@@ -12,5 +12,6 @@
 
 @property(nonatomic, strong) PFObject *clickedCell;
 @property(nonatomic, strong) PFObject *clickedDeal;
+@property (nonatomic, retain) NSMutableDictionary *sections;
 
 @end

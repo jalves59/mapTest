@@ -71,9 +71,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT2-bL-O9S" id="lo5-lT-HNS">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="HvS-iE-SKg" kind="push" identifier="detail" id="3Fj-Ae-Rvo"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -82,6 +79,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ieh-FE-UHp"/>
+                    <connections>
+                        <segue destination="HvS-iE-SKg" kind="push" identifier="detail" id="CMx-Ym-q3T"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1se-BE-2KE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,9 +145,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h7w-vg-cMd" id="5IC-3V-AbM">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="5IM-bS-hbB" kind="push" identifier="deals" id="6mb-GA-1Ns"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -158,6 +155,9 @@
                     <tabBarItem key="tabBarItem" title="Offers" image="offer" id="MJ8-Ae-lfN"/>
                     <navigationItem key="navigationItem" id="olw-Rt-d5x"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <segue destination="5IM-bS-hbB" kind="push" identifier="deals" id="4AJ-Sq-5eL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qF0-Xg-Gth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
